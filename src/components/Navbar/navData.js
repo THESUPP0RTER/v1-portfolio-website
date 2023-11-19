@@ -1,16 +1,16 @@
 export const navLinks = [
   {
-    label: 'Projects',
-    pathname: '/#project-1',
-  },
-  {
     label: 'Details',
     pathname: '/#details',
   },
   {
-    label: 'Articles',
-    pathname: '/articles',
+    label: 'Projects',
+    pathname: '/#project-1',
   },
+  // {
+  //   label: 'Articles',
+  //   pathname: '/articles',
+  // },
   {
     label: 'Contact',
     pathname: '/contact',
@@ -19,18 +19,28 @@ export const navLinks = [
 
 export const socialLinks = [
   {
-    label: 'Twitter',
-    url: 'https://twitter.com/hamishMW',
-    icon: 'twitter',
+    label: 'Linkedin',
+    url: 'https://www.linkedin.com/in/hunter-lewis-6133a480/',
+    icon: 'linkedin',
   },
   {
-    label: 'Figma',
-    url: 'https://www.figma.com/@Hamish',
-    icon: 'figma',
+    label: 'Google',
+    url: 'mailto:gabehlewis@gmail.com',
+    icon: 'google',
   },
   {
     label: 'Github',
-    url: 'https://github.com/HamishMW',
+    url: 'https://github.com/THESUPP0RTER',
     icon: 'github',
+  },
+  {
+    label: 'Twitter',
+    url: 'https://bsky.app/profile/thesupporter.bsky.social',
+    icon: 'twitter',
+  },
+  {
+    label: 'Discord',
+    url: 'https://discordapp.com/users/138461491757187072',
+    icon: 'discord',
   },
 ];

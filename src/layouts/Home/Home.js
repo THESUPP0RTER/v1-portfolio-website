@@ -18,7 +18,14 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Developer', 'Prototyper', 'Animator', 'Illustrator', 'Modder'];
+const disciplines = [
+  'Student',
+  'Architect',
+  'Researcher',
+  'Designer',
+  'Writer',
+  'Data Advocate',
+];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -30,7 +37,8 @@ export const Home = () => {
   const details = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, details];
+    const sections = [intro, projectOne, details];
+    // projectTwo, projectThree,
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -68,9 +76,9 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="Designer + Developer"
-        description="Design portfolio of Hamish Williams — a product designer working on web & mobile
-          apps with a focus on motion, experience design, and accessibility."
+        title="Engineer + Student"
+        description="Portfolio of Hunter Lewis — a software engineer working on web
+          apps with a focus on data."
       />
       <Intro
         id="intro"
@@ -78,15 +86,20 @@ export const Home = () => {
         disciplines={disciplines}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
+      <Profile
+        sectionRef={details}
+        visible={visibleSections.includes(details.current)}
+        id="details"
+      />
       <ProjectSummary
         id="project-1"
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        title="Heimer's Hackers Power Rankings"
+        description="Ranking global League of Legends eSports teams"
         buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        buttonLink="https://devpost.com/software/name-gurlqb"
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
@@ -98,7 +111,7 @@ export const Home = () => {
           ],
         }}
       />
-      <ProjectSummary
+      {/* <ProjectSummary
         id="project-2"
         alternate
         sectionRef={projectTwo}
@@ -142,12 +155,8 @@ export const Home = () => {
             },
           ],
         }}
-      />
-      <Profile
-        sectionRef={details}
-        visible={visibleSections.includes(details.current)}
-        id="details"
-      />
+      /> */}
+
       <Footer />
     </div>
   );
