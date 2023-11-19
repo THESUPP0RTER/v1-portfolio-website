@@ -20,7 +20,7 @@ export const navLinks = [
 export const socialLinks = [
   {
     label: 'Linkedin',
-    url: 'https://www.linkedin.com/in/hunter-lewis-6133a480/',
+    url: 'https://www.linkedin.com/in/hunter-lewis9/',
     icon: 'linkedin',
   },
   {
