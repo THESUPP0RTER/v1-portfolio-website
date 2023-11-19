@@ -21,9 +21,9 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hey!" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I'm Hunter, currently a student attending UIUC and a Fullstack Associate Software
+      I’m Hunter, currently a student attending UIUC and a Fullstack Associate Software
       Engineer at <Link href="https://www.amgen.com">Amgen</Link>. For the past couple of
-      years I've been quite interested in various aspects of Data Science and ML and been
+      years I’ve been quite interested in various aspects of Data Science and ML and been
       developing projects revolving around that.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
@@ -32,7 +32,7 @@ const ProfileText = ({ visible, titleId }) => (
       Feel free to reach out to me on Discord or Email for any inquiries!
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I'm planning on adding more to this website. (E.g. Projects, Blog Articles,
+      I’m planning on adding more to this website. (E.g. Projects, Blog Articles,
       Prototypes) so stay tuned!
     </Text>
   </Fragment>
