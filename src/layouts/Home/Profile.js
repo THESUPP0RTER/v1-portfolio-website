@@ -85,7 +85,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   reveal
                   delay={100}
                   placeholder={profileImgPlaceholder}
-                  srcSet={[profileImg, profileImgLarge]}
+                  srcSet={[profileImg]}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
                   alt="me"
                 />
